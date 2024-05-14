@@ -21,6 +21,8 @@ body {
     ;
 }
 
+/* Navbar  */
+
 .navbar {
     /* border: 2px solid black; */
     display: flex;
@@ -40,7 +42,7 @@ body {
     gap: 10px;
 }
 
-#cross-mark{
+#cross-mark {
     display: none;
 }
 
@@ -79,7 +81,7 @@ body {
     justify-content: center;
 }
 
-.logo-img-container{
+.logo-img-container {
     width: fit-content;
     height: fit-content;
 }
@@ -117,4 +119,107 @@ body {
 .hamburger {
     font-size: 30px;
     display: none;
+}
+
+/* Main  */
+.hero-container {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text-content {
+    width: 100%;
+    color: var(--light-font2);
+    padding: 100px 40px;
+    font-size: 45px;
+    font-family: var(--poesten-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-text-content>#hero-heading {
+    margin: 0%;
+}
+
+.hero-text-content>#hero-heading>span {
+    color: var(--ligth-theme-font);
+}
+
+.hero-text-content>h3 {
+    margin: 0%;
+    font-size: 40px;
+}
+
+
+.hero-button-container {
+    width: fit-content;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#explore-projects {
+    width: fit-content;
+    background-color: var(--light-font2);
+    color: var(--ligth-theme-font);
+    padding: 16px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--poppins-font);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#explore-projects>a {
+    color: var(--ligth-theme-font);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#explore-projects>a:hover {
+    color: var(--light-font2);
+}
+
+#explore-projects:hover {
+    background-color: #fff;
+    border: 2px solid var(--light-font2);
+    color: var(--light-font2);
+    scale: 1.04;
+}
+
+#explore-arrow {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: var(--ligth-theme-font);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#explore-arrow:hover{
+    background-color: #fff;
+    border: 2px solid var(--ligth-theme-font);
+}
+
+#explore-arrow>a{
+    font-size: 25px;
+    padding:14px 13px;
+    color: var(--light-font2);
+}
+
+#explore-arrow>a:hover{
+    color: var(--ligth-theme-font);
+    rotate: 40deg;
+    transition: rotate 0.7s linear;
 }
