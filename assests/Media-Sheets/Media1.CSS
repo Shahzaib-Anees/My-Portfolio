@@ -1,72 +1,62 @@
-@media (min-width: 200px) and (max-width: 780px) {
+@media (min-width: 200px) and (max-width: 920px) {
     body {
-        padding: 3px 7px;
-    }
-
-    /* Navbar  */
-    .navbar {
-        padding: 0px 5px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid #aaaaaa;
-        position: sticky;
-    }
-
-    .nav_logo {
-        width: 180px;
-        height: 80px;
-        padding: 5px 0px;
-    }
-
-    .nav_logo>img {
-        width: 100%;
-        height: 100%;
-    }
-
-    #nav_links {
-        width: 100%;
-        height: 80vh;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 17px 20px;
-        top: 70px;
-        background-color: #fff;
-        display: none;
-    }
-
-    #nav_links>li {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 14px 2px;
-        border-bottom: 1px solid #aaaaaa;
-    }
-
-    #nav_links>li>a {
-        font-size: 18px;
         padding: 0%;
     }
 
-    #nav_links>li>a:hover {
-        color: var(--color);
-        border-bottom: none;
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 28px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
-    #hamburger-xmark {
+    #nav-links {
+        width: 100%;
+        padding: 20px 20px;
+        gap: 30px;
+        position: absolute;
+        flex-direction: column;
+        top: 120px;
+        left: 0px;
+        background-color: #f1f1f1;
+        display: none;
+    }
+
+    #cross-mark {
         display: flex;
-        font-size: 35px;
-        color: #aaaaaa;
         align-self: flex-end;
+        font-size: 30px;
+        margin-right: 20px;
     }
 
-    /* Mobile Ham icon  */
-    .mobile-ham-icon {
-        display: flex;
-        font-size: 35px;
-        color: #aaaaaa;
+    #nav-links>.link-item {
+        width: 100%;
+        border-bottom: 1px solid #c6c5c4;
     }
+
+    .link-item>a {
+
+        font-size: 18px;
+    }
+
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-logo {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .logo-img-container>img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+
 }
