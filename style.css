@@ -281,6 +281,14 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+#resume-btn>a{
+    color: var(--light-font2);
+
+}
+#resume-btn>a:hover{
+    color: var(--ligth-theme-font);
+}
+
 #resume-btn:hover{
     background-color: #fff;
     border: 2px solid var(--ligth-theme-font);

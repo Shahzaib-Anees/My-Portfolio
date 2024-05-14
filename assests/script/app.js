@@ -7,5 +7,7 @@ function hamurgerMenu() {
 }
 
 function removeHamburger() {
-    navLinks.style.display = "none"
+    if (navLinks.style.display === "flex") {
+       window.matchMedia(navLinks.style.display= "none")
+    } 
 }
