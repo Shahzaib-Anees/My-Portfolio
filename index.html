@@ -31,19 +31,19 @@
                     <i class="fa-solid fa-xmark"></i>
                 </li>
                 <li class="link-item">
-                    <a href="#">Home</a>
+                    <a href="#" onclick="removeHamburger()">Home</a>
                 </li>
                 <li class="link-item">
-                    <a href="#">About</a>
+                    <a href="./index.html#about-section" onclick="removeHamburger()">About</a>
                 </li>
                 <li class="link-item">
-                    <a href="#">Services</a>
+                    <a href="#" onclick="removeHamburger()">Services</a>
                 </li>
                 <li class="link-item">
-                    <a href="#">Projects</a>
+                    <a href="#" onclick="removeHamburger()">Projects</a>
                 </li>
                 <li class="link-item">
-                    <a href="#">Contact</a>
+                    <a href="#" onclick="removeHamburger()">Contact</a>
                 </li>
             </ul>
             <div class="nav-end-content">
@@ -58,26 +58,61 @@
     </header>
 
     <main>
-        <article class="hero-container">
-            <div class="hero-text-content">
-                <h1 id="hero-heading">Hello! I ' m
-                    <span>Shahzaib</span>
-                </h1>
-                <h3>
-                    I am a Web and Mobile Application Developer..
-                </h3>
-                <div class="hero-button-container">
-                    <button id="explore-projects">
-                        <a href="#">Explore Work</a>
-                    </button>
-                    <button id="explore-arrow">
-                        <a href="#">
-                            <i class="fa-solid fa-location-arrow"></i>
-                        </a>
+        <section id="hero-sec">
+            <article class="hero-container">
+                <div class="hero-text-content">
+                    <h1 id="hero-heading">Hello! I ' m
+                        <span>Shahzaib</span>
+                    </h1>
+                    <h3>
+                        I am a Web and Mobile Application Developer..
+                    </h3>
+                    <div class="hero-button-container">
+                        <button id="explore-projects">
+                            <a href="#">Explore Work</a>
+                        </button>
+                        <button id="explore-arrow">
+                            <a href="#">
+                                <i class="fa-solid fa-location-arrow"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="about-section">
+            <h3>About Me</h3>
+            <article class="about-container">
+                <p>Let me share some Insights with you about "My Journey in Tech";</p>
+                <p>Hello! It's me "Mohammad Shahzaib" here and I am a "Web and Mobile Application Developer" . I am
+                    mastering to create dynamic , reponsive and Interactive Web Applications . Let me share my bit small
+                    academic journey with you . My Academic journey starts at "Educationist Grammar School" where I
+                    completes my Matriculation and I then went to "Fazaia Intermediate College , PAF Base" for High
+                    School and completes my F.S.C .
+                    <br> Then , I went to "Saylani Mass IT Training, Institute" to acquire skills in Web Development and
+                    found "Tech" as my Passion . I embarking in exploring different Programming Languages and Tech
+                    Fields
+                </p>
+
+                <ul id="about-skills-ul">Presenting you my skills including ;
+                    <li>Proficient in HTML</li>
+                    <li>Proficient in CSS</li>
+                    <li>Familiar with Bootstrap</li>
+                    <li>Familiar with Material UI</li>
+                    <li>Intermediate in JavaScript</li>
+                </ul>
+
+                <p>This skills will increase InshaAllah in the future as ,I am still on the journey of Exploring realms
+                    of Backend and Mern-Stack Development. You can Download my Resume/CV from the Button below. </p>
+                </article>
+                <div class="resume-container">
+                    <a href="#">Download Resume</a>
+                    <button id="resume-btn">
+                        <i class="fa-solid fa-location-arrow"></i>
                     </button>
                 </div>
-            </div>
-        </article>
+        </section>
     </main>
 </body>
 <script src="./assests/script/app.js"></script>

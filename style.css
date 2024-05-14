@@ -132,7 +132,7 @@ body {
 .hero-text-content {
     width: 100%;
     color: var(--light-font2);
-    padding: 100px 40px;
+    padding: 120px 40px;
     font-size: 45px;
     font-family: var(--poesten-font);
     display: flex;
@@ -154,6 +154,7 @@ body {
     margin: 0%;
     font-size: 40px;
 }
+
 
 
 .hero-button-container {
@@ -207,19 +208,84 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#explore-arrow:hover{
+#explore-arrow:hover {
     background-color: #fff;
     border: 2px solid var(--ligth-theme-font);
 }
 
-#explore-arrow>a{
+#explore-arrow>a {
     font-size: 25px;
-    padding:14px 13px;
+    padding: 14px 13px;
     color: var(--light-font2);
 }
 
-#explore-arrow>a:hover{
+#explore-arrow>a:hover {
     color: var(--ligth-theme-font);
     rotate: 40deg;
     transition: rotate 0.7s linear;
+}
+
+
+/* About Section  */
+#about-section {
+    border-top: 1px solid #c6c5c4;
+    border-bottom: 1px solid #c6c5c4;
+    /* border: 2px solid black; */
+    padding: 24px 100px;
+    background-color: #f5f5f5;
+    font-family: var(--poppins-font);
+    color: var(--light-font2);
+}
+
+#about-section > h3{
+    font-size: 40px;
+    margin: 0%;
+    word-spacing: 5px;
+    text-shadow: 0px 14px 17px rgba(69, 68, 68, 0.7);
+}
+
+.about-container{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#about-skills-ul{
+    margin: 0%;
+    padding: 0;
+    font-weight: 600;
+}
+
+.resume-container{
+    width: fit-content;
+    padding: 3px ;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.resume-container>a{
+    font-size: 18px;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+
+#resume-btn{
+    width: 39px;
+    height: 39px;
+    background-color: var(--ligth-theme-font);
+    outline: none;
+    color: var(--light-font2);
+    border: none;
+    font-size: 22px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#resume-btn:hover{
+    background-color: #fff;
+    border: 2px solid var(--ligth-theme-font);
+    color: var(--ligth-theme-font);
+    rotate: 40deg;
+    transition: rotate 0.7s linear;
+    scale: 1.1;
 }
