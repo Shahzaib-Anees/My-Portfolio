@@ -13,9 +13,11 @@
 
     #nav-links {
         width: 100%;
-        padding: 20px 20px;
+        height: 100vh;
+        padding: 20px 3px;
         gap: 30px;
         position: absolute;
+        justify-content: flex-start;
         flex-direction: column;
         top: 120px;
         left: 0px;
@@ -32,11 +34,11 @@
 
     #nav-links>.link-item {
         width: 100%;
+        padding: 25px 0px;
         border-bottom: 1px solid #c6c5c4;
     }
 
     .link-item>a {
-
         font-size: 18px;
     }
 
@@ -75,7 +77,28 @@
 
     /* About Section  */
     #about-section {
-        padding: 24px 26px;
+        padding: 24px 10px;
     }
 
+    #about-section>h3 {
+        font-size: 32px;
+    }
+
+    .about-container>p {
+        font-size: 16px;
+    }
+
+    /* Project Section  */
+    #projects-sec {
+        margin-top: 4px;
+        padding: 24px 10px;
+    }
+
+    #projects-sec>h3{
+        font-size: 32px;
+    }
+    
+    .project-container{
+        row-gap: 40px;
+    }
 }

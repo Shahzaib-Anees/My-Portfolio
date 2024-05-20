@@ -16,15 +16,13 @@ body {
     --light-font2: #414141;
     --poesten-font: "Poetsen One", sans-serif;
     --poppins-font: "Poppins", sans-serif;
-    --theme-color1: #57c5c0;
-    --theme-color2: #66FCF1;
+    --link-color : #382b9f;
     ;
 }
 
 /* Navbar  */
 
 .navbar {
-    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -231,14 +229,15 @@ body {
     border-top: 1px solid #c6c5c4;
     border-bottom: 1px solid #c6c5c4;
     /* border: 2px solid black; */
-    padding: 24px 100px;
+    padding: 24px 50px;
     background-color: #f5f5f5;
     font-family: var(--poppins-font);
     color: var(--light-font2);
 }
 
-#about-section > h3{
+.sec-heading{
     font-size: 40px;
+    font-family: var(--poppins-font);
     margin: 0%;
     word-spacing: 5px;
     text-shadow: 0px 14px 17px rgba(69, 68, 68, 0.7);
@@ -267,6 +266,7 @@ body {
     font-size: 18px;
     font-weight: 600;
     word-spacing: 5px;
+    color: var(--link-color);
 }
 
 #resume-btn{
@@ -296,4 +296,150 @@ body {
     rotate: 40deg;
     transition: rotate 0.7s linear;
     scale: 1.1;
+}
+
+
+/* Project Section  */
+#projects-sec{
+    margin-top: 4px;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #fafafa;
+}
+
+
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 20px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    padding: 5px 0px;
+}
+
+
+.project-box{
+    max-width: 370px;
+    min-width: 330px;
+    padding: 10px 6px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.project-box:hover{
+    scale: 1.01;
+    transition: scale 0.5s linear;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.project-thumbnail-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-thumbnail-container>img{
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.project-about{
+    height: 150px;
+    border-top: 1px solid #c5c6c4;
+    border-bottom: 1px solid #c5c6c4;
+    padding: 13px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    color: var(--light-font2);
+    font-family: var(--poppins-font);
+}
+
+
+.project-about>h4{
+    margin: 0%;
+    font-size: 17px;
+}
+
+.project-about>p{
+    margin: 0%;
+    font-size: 14px;
+}
+
+
+.button-container{
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#view-project{
+    background-color: var(--link-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0px;
+    font-size: 16px;
+    font-family: var(--poesten-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#view-project:hover{
+    scale: 1.01;
+    transition: scale 0.5s linear;
+    background-color: #fff;
+    border: 2px solid var(--link-color);
+    color: var(--link-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#source-project{
+    border: 2px solid var(--link-color);
+    padding: 5px 0px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: var(--poesten-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--link-color);
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#source-project:hover{
+    scale: 1.01;
+    transition: scale 0.5s linear;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+.project-box-foot{
+    /* border: 2px solid black; */
+    padding: 5px 10px;
+}
+
+.project-box-foot>p{
+    margin: 0;
+}
+.project-box-foot>p>a{
+    color: var(--light-font2);
+    font-size: 14px;
+    font-family: var(--poesten-font);
+}
+
+.project-box-foot>p>a:hover{
+    color: var(--link-color);
 }

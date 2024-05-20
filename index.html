@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Page</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./assests/Media/dark.css">
+    <link rel="stylesheet" id="main-stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./assests/Media/dark.css"> -->
     <link rel="stylesheet" href="./assests/Media-Sheets/Media1.CSS">
     <!-- <link rel="stylesheet" href="./assests/Media-Sheets/Media2.CSS"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -41,7 +41,7 @@
                     <a href="#" onclick="removeHamburger()">Services</a>
                 </li>
                 <li class="link-item">
-                    <a href="#" onclick="removeHamburger()">Projects</a>
+                    <a href="./index.html#projects-sec" onclick="removeHamburger()">Projects</a>
                 </li>
                 <li class="link-item">
                     <a href="#" onclick="removeHamburger()">Contact</a>
@@ -70,10 +70,10 @@
                     </h3>
                     <div class="hero-button-container">
                         <button id="explore-projects">
-                            <a href="#">Explore Work</a>
+                            <a href="./index.html#projects-sec">Explore Work</a>
                         </button>
                         <button id="explore-arrow">
-                            <a href="#">
+                            <a href="./index.html#projects-sec">
                                 <i class="fa-solid fa-location-arrow"></i>
                             </a>
                         </button>
@@ -83,7 +83,7 @@
         </section>
 
         <section id="about-section">
-            <h3>About Me</h3>
+            <h3 class="sec-heading">About Me</h3>
             <article class="about-container">
                 <p>Let me share some Insights with you about "My Journey in Tech";</p>
                 <p>Hello! It's me "Mohammad Shahzaib" here and I am a "Web and Mobile Application Developer" . I am
@@ -115,6 +115,151 @@
                     </a>
                 </button>
             </div>
+        </section>
+
+        <!-- Project Section  -->
+        <section id="projects-sec">
+            <h3 class="sec-heading">Projects</h3>
+            <article class="project-container">
+                <!-- Project 1  -->
+                <!-- <div class="project-box">
+                    <div class="project-thumbnail-container">
+                        <img src="./assests/Media/Projects-Images/salt'npepper-thumbnail.png"
+                            alt="Project-Thumbnail">
+                    </div>
+
+                    <div class="project-about">
+                        <h4>Salt'n Pepper Web Application Clone</h4>
+                        <p> Developed a Web Application Clone of Salt'n Pepper with HTML5 and CSS3 on my journey of learning Frontend Web Develepment</p>
+                    </div>
+                    <div class="button-container">
+                        <button id="view-project">
+                            <a href="https://shahzaib-anees.github.io/Salt-n-Pepper-WEB-UI-Clone/">View</a>
+                        </button>
+                        <button id="source-project">
+                            <a href="https://github.com/Shahzaib-Anees/Salt-n-Pepper-WEB-UI-Clone.git">Source Code</a>
+                        </button>
+                    </div>
+
+                    <div class="project-box-foot">
+                        <p>
+                            <a href="">Email : mohammadshahzaibanees@gmail.com</a>
+                        </p>
+                    </div>
+                </div> -->
+                <!-- Project 2  -->
+                <div class="project-box">
+                    <div class="project-thumbnail-container">
+                        <img src="./assests/Media/Projects-Images/logo.png.webp" alt="Project-Thumbnail">
+                    </div>
+
+                    <div class="project-about">
+                        <h4>Real State Multy Web Application</h4>
+                        <p> Developed a User Interface of Real Sate Multy with HTML5 and CSS3 on my journey of learning
+                            Frontend Web Development</p>
+                    </div>
+                    <div class="button-container" >
+                        <a href="https://shahzaib-anees.github.io/Real-State-Multy/" id="view-project">
+                            <div class="project-btn">View</div>
+                        </a>
+                        <a href="https://github.com/Shahzaib-Anees/Real-State-Multy.git" id="source-project">
+                            <div class="project-btn">Source Code</div>
+                        </a>
+                    </div>
+
+                    <div class="project-box-foot">
+                        <p>
+                            <a href="">Email : mohammadshahzaibanees@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Project 2  -->
+                <div class="project-box">
+                    <div class="project-thumbnail-container">
+                        <img src="./assests/Media/Projects-Images/to-do-application-light-removebg-preview.jpeg"
+                            alt="Project-Thumbnail">
+                    </div>
+
+                    <div class="project-about">
+                        <h4>TO-DO Application</h4>
+                        <p>Designed and Developed To-Do Application to make you remember your daily tasks esaily and
+                            comfortabley .</p>
+                    </div>
+                    <div class="button-container" >
+                        <a href="https://shahzaib-anees.github.io/Real-State-Multy/" id="view-project">
+                            <div class="project-btn">View</div>
+                        </a>
+                        <a href="https://github.com/Shahzaib-Anees/Real-State-Multy.git" id="source-project">
+                            <div class="project-btn">Source Code</div>
+                        </a>
+                    </div>
+
+                    <div class="project-box-foot">
+                        <p>
+                            <a href="">Email : mohammadshahzaibanees@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Project 2  -->
+                <div class="project-box">
+                    <div class="project-thumbnail-container">
+                        <img src="./assests/Media/Projects-Images/calculator-thumbnail-removebg-preview.jpeg"
+                            alt="Project-Thumbnail">
+                    </div>
+
+                    <div class="project-about">
+                        <h4>Calculator Application</h4>
+                        <p>
+                            Make your Calculations easy and comfortable with my progressive web app calculator , design
+                            for efficiency and accessibility
+                        </p>
+                    </div>
+                    <div class="button-container" >
+                        <a href="https://shahzaib-anees.github.io/Real-State-Multy/" id="view-project">
+                            <div class="project-btn">View</div>
+                        </a>
+                        <a href="https://github.com/Shahzaib-Anees/Real-State-Multy.git" id="source-project">
+                            <div class="project-btn">Source Code</div>
+                        </a>
+                    </div>
+                    <div class="project-box-foot">
+                        <p>
+                            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Email :
+                                mohammadshahzaibanees@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Project 3  -->
+                <!-- <div class="project-box">
+                    <div class="project-thumbnail-container">
+                        <img src="./assests/Media/Projects-Images/calculator-thumbnail-removebg-preview.jpeg"
+                            alt="Project-Thumbnail">
+                    </div>
+
+                    <div class="project-about">
+                        <h4>Calculator Application</h4>
+                        <p>
+                            Make your Calculations easy and comfortable with my progressive web app calculator , design
+                            for efficiency and accessibility 
+                        </p>
+                        <div class="button-container">
+                            <button id="view-project">
+                                <a href="https://shahzaib-anees.github.io/GUI-Calculator/">View</a>
+                            </button>
+                            <button id="source-project">
+                                <a href="https://github.com/Shahzaib-Anees/GUI-Calculator.git">Source Code</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-box-foot">
+                        <p>
+                            <a href="">Email : mohammadshahzaibanees@gmail.com</a>
+                        </p>
+                    </div> -->
+                </div>
+            </article>
+
         </section>
     </main>
 </body>
